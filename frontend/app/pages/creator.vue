@@ -124,7 +124,7 @@
         <!--DISPLAY SECTION-->
         <section v-if="proChallengeArrived == true" class="flex flex-col gap-8 justify-center items-center py-12">
             <h1 class="text-6xl font-bold">Your Project Challenge</h1>
-            <div class="flex h-screen gap-8 justify-center items-center">
+            <div class="flex h-auto gap-8 justify-center items-center">
                 <div class="flex w-[45vw] h-full flex-col gap-3">
                     <div class="w-full min-h-[10%] bg-accent rounded-xl flex justify-between items-center p-5">
                         <div class="flex flex-wrap gap-3 max-w-[40%]">
@@ -138,11 +138,11 @@
                             <NuxtLink href="/shareSolution" class="btn btn-primary">Post Solution</NuxtLink>
                         </div>
                     </div>
-                    <div class="w-full min-h-[35%] bg-accent rounded-xl flex justify-center items-center flex-col gap-5 px-8">
+                    <div class="w-full min-h-[35%] bg-accent rounded-xl flex justify-center items-center flex-col gap-5 p-[20px]">
                         <h1 class="text-2xl relative self-start">The general issue</h1>
                         <p class="text-4xl p-8 bg-secondary rounded-lg h-[70%] flex items-center">{{ proChallenge.description }}</p>
                     </div>
-                    <div class="w-full min-h-[55%] bg-accent rounded-xl px-8 flex flex-col justify-center items-center gap-3">
+                    <div class="w-full min-h-[55%] bg-accent rounded-xl p-[20px] flex flex-col justify-center items-center gap-3">
                         <h1 class="text-2xl relative self-start">Occurances</h1>
                         <div v-for="example in proChallenge.example_scenarios" class="text-4xl p-8 bg-secondary rounded-lg flex items-center">
                             {{ example.scenario }}
@@ -150,8 +150,8 @@
                     </div>
                 </div>
                 <div class="flex w-[45vw] h-full flex-col gap-3">
-                    <div class="w-full h-full bg-accent rounded-xl flex flex-col p-8 gap-4">
-                        <div class="w-full h-[30%] bg-secondary rounded-xl flex justify-between items-center">
+                    <div class="w-full h-auto bg-accent rounded-xl flex flex-col p-8 gap-4">
+                        <div class="w-full h-[30%] p-[20px] bg-secondary rounded-xl flex justify-between items-center">
                             <div class="w-[50%] flex flex-col gap-3 justify-center items-center">
                                 <h1 class="text-2xl">Suggested Languages</h1>
                                 <div class="flex flex-col gap-2">
@@ -172,14 +172,14 @@
                                     <div v-if="showTools == false">
                                         <button @click="revealTools" class="btn btn-primary">Reveal</button>
                                     </div>
-                                    <div v-if="showTools == true" v-for="tool in proChallenge.suggested_tools" class="text-3xl p-5 bg-[rgba(0,0,0,0.3)] rounded-2xl text-center max-w-[85%]">
+                                    <div v-if="showTools == true" v-for="tool in proChallenge.suggested_tools" class="text-3xl p-5 bg-[rgba(0,0,0,0.3)] rounded-2xl text-center max-w-[85%] flex justify-center items-center">
                                         {{ tool }} <br>
                                     </div>
                                 </div>
                             </div>
                             
                         </div>
-                        <div class="w-full h-[70%] bg-secondary rounded-xl flex flex-col justify-center items-center p-5">
+                        <div class="w-full h-auto bg-secondary rounded-xl flex flex-col justify-center items-center p-5">
                             <h1 class="text-4xl text-center">Possible Ideas</h1>
                             <div v-if="showIdeas == false">
                                 <button @click="revealIdeas" class="btn btn-primary">Reveal</button>
