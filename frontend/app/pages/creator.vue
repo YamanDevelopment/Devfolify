@@ -124,7 +124,7 @@
         <!--DISPLAY SECTION-->
         <section v-if="proChallengeArrived == true" class="flex flex-col gap-8 justify-center items-center py-12">
             <h1 class="text-6xl font-bold">Your Project Challenge</h1>
-            <div class="flex h-auto gap-8 justify-center items-center">
+            <div class="flex flex-col h-auto gap-8 justify-center items-center">
                 <div class="flex w-[45vw] h-full flex-col gap-3">
                     <div class="w-full min-h-[10%] bg-accent rounded-xl flex justify-between items-center p-5">
                         <div class="flex flex-wrap gap-3 max-w-[40%]">
@@ -141,6 +141,7 @@
                     <div class="w-full min-h-[35%] bg-accent rounded-xl flex justify-center items-center flex-col gap-5 p-[20px]">
                         <h1 class="text-2xl relative self-start">The general issue</h1>
                         <p class="text-4xl p-8 bg-secondary rounded-lg h-[70%] flex items-center">{{ proChallenge.description }}</p>
+                        <p class="text-4xl p-8 bg-secondary rounded-lg h-[70%] flex items-center">Your goal is to make some sort of project that solves a problem around this topic. Below are also specific occurances that happen to people which might help you get an idea of what to build</p>
                     </div>
                     <div class="w-full min-h-[55%] bg-accent rounded-xl p-[20px] flex flex-col justify-center items-center gap-3">
                         <h1 class="text-2xl relative self-start">Occurances</h1>
