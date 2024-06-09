@@ -68,7 +68,22 @@ async function generateJSON(skillLevel: string, techInterests: string, familiarL
     return ({
       "success": "false",
       "message": "there was an error - This usually happens when either with the AI or it's response being formatted poorly",
-      "error": message
+      "error": message,
+      // To not break frontend parsing while also telling the user there's been an error
+      "problem": {
+        "field": "",
+        "description": "",
+        "example_scenarios": [
+          {
+            "scenario": "Oops! We've encountered an error... reload this page or try again.",
+            "possible_solutions": [""]
+          }
+        ],
+        "target_level": "",
+        "areas_of_interest": [""],
+        "suggested_languages": [""],
+        "suggested_tools": [""]
+      }
     });
   }
 }

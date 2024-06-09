@@ -14,13 +14,13 @@ export const useUserSession = () =>  {
     const login = async (email: string, password: string): Promise<void> => {
         const authUser = await account.createEmailPasswordSession(email, password); // Open user session in Appwrite
         current.value = authUser; // Pass user data to current ref
-        navigateTo("/");
+        navigateTo("/dashboard");
     };
 
     const logout = async (): Promise<void> => {
         await account.deleteSession("current"); // Delete Appwrite user session
         current.value = null; // Clear current ref
-        navigateTo("/");
+        navigateTo("/dashboard");
     };
 
     // Check if already logged in to initialize the store.

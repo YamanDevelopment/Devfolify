@@ -1,20 +1,5 @@
-<script setup>
-    const user = useUserSession();
-</script>
-
 <template>
-    <div v-if="user.current.value">
-        <Navdude />
-        
-        
-
-        <div class="w-screen h-24 px-8 bg-neutral flex justify-between items-center">
-            <a class="text-3xl font-bold w-12 h-12 cursor-pointer"><img src="/github.svg" alt=""></a>
-            <p class="text-lg font-bold">© 2024 Yaman. This project falls under the GNU GENERAL PUBLIC LICENSE</p>
-            <a class="text-3xl font-bold w-12 h-12"></a>
-        </div>
-    </div>
-    <div v-else>
+    <div>
         <Navdude />
         <section class="flex justify-center items-center">
             <hero />
@@ -37,7 +22,8 @@
         <section class="flex flex-col gap-5 justify-center items-center h-screen">
             <h1 class="text-6xl font-bold">Enjoy!</h1>
             <div class="flex gap-3">
-                <a href="/login" class="btn w-24 text-white">Signin</a>
+                <a href="/dashboard" class="btn w-24 text-white">Dashboard</a>
+                <a href="/login" class="btn w-24 text-white">Log In</a>
                 <a href="/login"class="btn w-24 btn-primary text-white">Signup</a>
             </div>
         </section>

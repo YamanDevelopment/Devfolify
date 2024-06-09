@@ -33,12 +33,12 @@
 
     const props = defineProps({
         handleSubmit: {
-        type: Function,
-        required: true
+            type: Function,
+            required: true
         },
         submitType: {
-        type: String,
-        required: true
+            type: String,
+            required: true
         }
     })
 </script>
