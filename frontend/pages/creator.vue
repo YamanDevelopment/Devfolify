@@ -50,6 +50,10 @@
 </script>
 
 <template>
+    <head>
+      <title>Devfolify - Creator</title>
+    </head>
+
     <Navdude />
     <!--FORM SECTION-->
     <div v-if="user.current.value">
@@ -124,8 +128,8 @@
                         </div>
                         <div class="flex gap-3">
                             <a class="btn brightness-50 btn-primary cursor-not-allowed">Safe for Later</a>
-                            <a href="/dashboard" class="btn btn-primary">Back to Dashboard</a>
-                            <a href="/shareSolution" class="btn btn-primary">Post Solution</a>
+                            <NuxtLink href="/dashboard" class="btn btn-primary">Back to Dashboard</NuxtLink>
+                            <NuxtLink href="/shareSolution" class="btn btn-primary">Post Solution</NuxtLink>
                         </div>
                     </div>
                     <div class="w-full min-h-[35%] bg-accent rounded-xl flex justify-center items-center flex-col gap-5 px-8">
@@ -190,8 +194,8 @@
             <h1 class="text-5xl">You seem to be lost...</h1>
             <p class="text-sm">This happens when you try accessing a page while not logged in</p>
             <div class="flex gap-3">
-                <a href="/" class="btn btn-primary w-28">Go Home</a>
-                <a href="/login" class="btn btn-primary btn-outline border-2 w-28">Login</a>
+                <NuxtLink href="/" class="btn btn-primary w-28">Go Home</NuxtLink>
+                <NuxtLink href="/login" class="btn btn-primary btn-outline border-2 w-28">Login</NuxtLink>
             </div>
         </div>
     </div>

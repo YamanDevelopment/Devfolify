@@ -9,17 +9,23 @@
             <p>{{ user.current.providerUid }}</p>
             <!-- Email and logout button if logged in user -->
             <div class="flex gap-3" v-if="user.current.value" >
-                <a href="/dashboard"class="btn w-24 text-white">
+                <NuxtLink href="/dashboard"class="btn w-24 text-white">
                     Dashboard
-                </a>
+                </NuxtLink>
                 <a href="/" class="btn w-24 text-white" type="button" @click="user.logout()">
                     Logout
                 </a>
             </div>
             <!-- Login button if no user logged in -->
-            <NuxtLink v-else href="/login" class="btn w-24 text-white">
-                Login
-            </NuxtLink>
+            <div class="flex gap-3" v-else >
+                <NuxtLink href="/login" class="btn w-24 text-white">
+                    Login
+                </NuxtLink>
+                <NuxtLink href="/login" class="btn btn-primary w-24 text-white">
+                    Signup
+                </NuxtLink>
+            </div>
+            
         </div>
     </div>
 </template>

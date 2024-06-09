@@ -40,6 +40,10 @@
 </script>
 
 <template>
+    <head>
+      <title>Devfolify - Dashboard</title>
+    </head>
+
     <Navdude />
     <div v-if="user.current.value">
         
@@ -66,8 +70,8 @@
                         <span class="text-2xl">0 ⏳</span>
                     </div>
                     <div class="flex gap-5">
-                        <a class="btn btn-primary btn-outline">Help</a>
-                        <a href="/shareSolution" class="btn btn-primary">Submit Your Project</a>
+                        <a class="btn btn-primary btn-outline brightness-50 cursor-not-allowed">Help</a>
+                        <NuxtLink href="/shareSolution" class="btn btn-primary">Submit Your Project</NuxtLink>
                     </div>
                 </div>
             </div>
@@ -101,7 +105,7 @@
                         </p>
                     </div>
 
-                    <a href="/creator" id="resourceToolbox" class="w-72 h-80 rounded-lg bg-accent flex flex-col gap-5 justify-between items-center text-center overflow-hidden cursor-pointer shadow-xl">
+                    <NuxtLink href="/creator" id="resourceToolbox" class="w-72 h-80 rounded-lg bg-accent flex flex-col gap-5 justify-between items-center text-center overflow-hidden cursor-pointer shadow-xl">
                         <div class="w-full h-8 bg-gradient-to-r from-red-500 to-orange-500 flex justify-center items-center py-1"></div>
                         <div class="flex flex-col gap-3">
                             <h1 class="text-3xl font-bold">Project Creator</h1>
@@ -110,7 +114,7 @@
                         <p class="text-xl mb-8">
                             This feature is home to Devfolify as it's one of the main cores for our product
                         </p>
-                    </a>
+                    </NuxtLink>
 
                     <div class="w-48 h-80 flex justify-center items-center">
                         <p class="text-xl">More to come...</p>
@@ -132,8 +136,8 @@
             <h1 class="text-5xl">You seem to be lost...</h1>
             <p class="text-sm">This happens when you try accessing a page while not logged in</p>
             <div class="flex gap-3">
-                <a href="/" class="btn btn-primary w-28">Go Home</a>
-                <a href="/login" class="btn btn-primary btn-outline border-2 w-28">Login</a>
+                <NuxtLink href="/" class="btn btn-primary w-28">Go Home</NuxtLink>
+                <NuxtLink href="/login" class="btn btn-primary btn-outline border-2 w-28">Login</NuxtLink>
             </div>
         </div>
     </div>

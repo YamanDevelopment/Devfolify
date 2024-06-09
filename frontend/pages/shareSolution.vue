@@ -3,6 +3,11 @@
 </script>
 
 <template>
+
+    <head>
+        <title>Devfolify - Share</title>
+    </head>
+
     <Navdude />
 
     <div v-if="user.current.value">
@@ -10,7 +15,7 @@
             <h1 class="text-7xl">😔 Sorry...</h1>
             <p class="text-2xl max-w-[700px] text-center">There wasn't enough time to setup a database for everyones projects to update on the dashboard forum & for solution posts</p>
             <div class="flex gap-3">
-                <a href="/dashboard" class="btn btn-primary border-2 w-28">Dashboard</a>
+                <NuxtLink href="/dashboard" class="btn btn-primary border-2 w-28">Dashboard</NuxtLink>
             </div>
         </div>
     </div>
@@ -20,8 +25,8 @@
             <h1 class="text-5xl">You seem to be lost...</h1>
             <p class="text-sm">This happens when you try accessing a page while not logged in</p>
             <div class="flex gap-3">
-                <a href="/" class="btn btn-primary w-28">Go Home</a>
-                <a href="/login" class="btn btn-primary btn-outline border-2 w-28">Login</a>
+                <NuxtLink href="/" class="btn btn-primary w-28">Go Home</NuxtLink>
+                <NuxtLink href="/login" class="btn btn-primary btn-outline border-2 w-28">Login</NuxtLink>
             </div>
         </div>
     </div>

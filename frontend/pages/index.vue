@@ -1,4 +1,8 @@
 <template>
+    <head>
+        <title>Devfolify</title>
+    </head>
+
     <div>
         <Navdude />
         <section class="flex justify-center items-center">
@@ -22,9 +26,8 @@
         <section class="flex flex-col gap-5 justify-center items-center h-screen">
             <h1 class="text-6xl font-bold">Enjoy!</h1>
             <div class="flex gap-3">
-                <a href="/dashboard" class="btn w-24 text-white">Dashboard</a>
-                <a href="/login" class="btn w-24 text-white">Log In</a>
-                <a href="/login"class="btn w-24 btn-primary text-white">Signup</a>
+                <NuxtLink href="/login" class="btn w-24 text-white">Log In</NuxtLink>
+                <NuxtLink href="/login"class="btn w-24 btn-primary text-white">Signup</NuxtLink>
             </div>
         </section>
         <div class="w-screen h-24 px-8 bg-neutral flex justify-between items-center">

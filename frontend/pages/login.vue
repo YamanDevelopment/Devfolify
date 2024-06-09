@@ -25,8 +25,12 @@
 </script>
 
 <template>
+  <head>
+      <title>Devfolify - Login</title>
+  </head>
+
   <div class="w-screen h-screen flex justify-between items-center" style="margin: 0 auto;">
-    <a href="/" class="absolute text-3xl font-bold cursor-pointer z-10 top-5 left-5">Devfolify</a>
+    <NuxtLink href="/" class="absolute text-3xl font-bold cursor-pointer z-10 top-5 left-5">Devfolify - Alpha</NuxtLink>
     <section class="w-[40vw] h-screen bg-[#000] overflow-hidden">
         <img src="/loginSide.jpg" alt="" class="w-full h-full">
     </section>

@@ -5,7 +5,7 @@
             <!-- Ignite your coding creativity and unleash your innovative potential with personalized coding challenges tailored to your skill level. -->
             <p class="text-xl">Giving you real world problems and a chance to solve it using code in your unique way. We're here to help you develop unique projects and real-world problem-solving skills.</p>
             <div class="flex gap-3">
-                <a href="/login" class="btn btn-primary text-white">Get Started</a>
+                <NuxtLink href="/login" class="btn btn-primary text-white">Get Started</NuxtLink>
                 <a href="#about" class="btn btn-primary btn-outline border-2">Learn More</a>
             </div>
         </div>
