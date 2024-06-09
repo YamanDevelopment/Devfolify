@@ -40,10 +40,10 @@
         <AuthForm v-if="isSignUp" :handle-submit="handleRegistration" submit-type="Sign Up"></AuthForm>
         <AuthForm v-else :handle-submit="handleLogin" submit-type="Log In"></AuthForm>
         <button v-if="isSignUp" @click="isSignUp = false" class="u-margin-block-start-16">
-            Already have an account? Log in
+            Already have an account? <span class="text-red-500">Log in!</span>
         </button>
         <button v-else @click="isSignUp = true" class="u-margin-block-start-16">
-            Don't have an account? Sign up
+            Don't have an account? <span class="text-red-500">Sign up!</span>
         </button>
       </div>
     </section>

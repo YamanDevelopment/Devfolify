@@ -1,5 +1,5 @@
 <template>
-    <form class="flex flex-col items-center gap-5" @submit.prevent="handleSubmit" >
+    <form class="flex flex-col items-center gap-3" @submit.prevent="handleSubmit" >
         <ul class="flex flex-col gap-2">
             <!-- Input field e-mail -->
             <li class="">
@@ -17,6 +17,7 @@
                 </label>
             </li>
         </ul>
+        <p class="max-w-[260px] text-gray-500 text-center text-sm">Password must be at least 9 characters long, start with a letter, and include a symbol.</p>
         <ul class="btn btn-primary w-32">
             <!-- Login button  -->
             <li class="">

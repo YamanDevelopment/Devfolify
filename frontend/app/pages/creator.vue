@@ -16,9 +16,12 @@
     const showTools = ref(false);
     const showIdeas = ref(false);
 
+    const loading = ref('display: none;');
+
     // Fetch & parse backend data
     async function getProchallenge() {
         if (submitClicked.value == true) return;
+        loading.value = 'display: flex;'
 
         const response = await $fetch(API_URL, {
             method: 'POST',
@@ -58,6 +61,9 @@
     <!--FORM SECTION-->
     <div v-if="user.current.value">
         <section v-if="proChallengeArrived == false" class="flex flex-col gap-8 justify-center items-center py-12">
+            <div :style="loading" class="w-24 h-24 fixed flex justify-center z-10 -translate-y-[150px] items-center bg-[rgba(0,0,0,0.5)] rounded-3xl">
+                <span class="loading loading-infinity loading-lg"></span>
+            </div>
             <h1 class="text-3xl font-bold">A few questions are needed to continue...</h1>
             <div class="flex flex-col gap-8">
                 <label class="form-control w-[30vw]">
