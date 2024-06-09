@@ -7,7 +7,7 @@ services:
     container_name: api-devfolify
     restart: unless-stopped
     ports:
-      - 9786:3000
+      - 9986:3000
   site_devfolify:
     build:
       context: ./frontend
@@ -15,4 +15,4 @@ services:
     container_name: site-devfolify
     restart: unless-stopped
     ports:
-      - 9787:3000
+      - 9987:3000
