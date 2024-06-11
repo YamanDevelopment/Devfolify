@@ -3,17 +3,7 @@
     <img width="350" src="https://github.com/YamanDevelopment/Devfolify/assets/109718204/9268e365-0283-4fd5-94ef-5f105b8d0adf" />
 </p>
 
-# DISCLAIMER
-AS OF JUNE 11th, THERE HAS BEEN A COMPLETE POWER OUTAGE AT THE SERVER LOCATION SO DEVFOLIFY'S BACKEND INCLUDING AUTH IS CURRENTLY DOWN AND WILL AUTOMATICALLY GO BACK UP ONCE POWER RETURNS
-
-If you encounter this message while judging this project, please save our project for later or refer to the [Demo Video](https://youtu.be/_MidgJKO8Vc) or [Demo Pictures](https://imgur.com/a/ppYiMDr) to make your decisions.
-
-BACKEND SERVICES SHOULD BE OPERATIONAL BY 1:00PM EST
-
---- 
-
 # Devfolify
-
 Welcome to **Devfolify**! Our project submission for the [**Illuminate Hackathon**](https://illuminatehackathon.org).
 
 ## Overview 🌟
