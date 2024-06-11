@@ -8,6 +8,8 @@ AS OF JUNE 11th, THERE HAS BEEN A COMPLETE POWER OUTAGE AT THE SERVER LOCATION S
 
 If you encounter this message while judging this project, please save our project for later or refer to the [Demo Video](https://youtu.be/_MidgJKO8Vc) or [Demo Pictures](https://imgur.com/a/ppYiMDr) to make your decisions.
 
+SERVICES SHOULD BE OPERATIONAL BY 11:00AM EST
+
 --- 
 
 # Devfolify
