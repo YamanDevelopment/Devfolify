@@ -16,6 +16,12 @@ Now the main premise and idea behind this app, although not fully built yet, is 
 
 Visit us at [devfolify.com](http://devfolify.com)
 
+### Dummy account info to try it out:
+
+#### Email: testing@test.test
+#### Password: TestingAccount123!
+
+
 Image showcase at [this gallery](https://imgur.com/a/ppYiMDr)
 
 ## Features ✨
