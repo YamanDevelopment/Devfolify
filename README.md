@@ -35,7 +35,7 @@ Image showcase at [this gallery](https://imgur.com/a/ppYiMDr)
 - - **DaisyUI Components**: TailwindCSS powered components for smaller elements like buttons and loading animations.
 - **[Appwrite](https://appwrite.io/) Authentication**: Secure user authentication implemented with self-hosted Appwrite.
 - **Docker Support**: Full Docker support with Docker Compose and Dockerfiles for easy self-hosting.
-- **Uptime Monitoring**: Alongside this app being fully up on the web at [devfolify.com](https://devfolify.com), there's also 24/7 [monitoring](https://uptime.lopezhome.tech/status/devfolify) to make sure services don't go down
+- **Uptime Monitoring**: Alongside this app being fully up on the web at [devfolify.com](https://devfolify.com), there's also 24/7 [monitoring](https://uptime.zachl.tech/status/devfolify) to make sure services don't go down
 
 ## TODO/Isssues
 
